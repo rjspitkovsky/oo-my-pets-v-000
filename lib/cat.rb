@@ -11,5 +11,8 @@ attr_accessor :name, :mood
     @mood
   end
 
+  def name
+    @name.dup.freeze
+  end 
 
 end
