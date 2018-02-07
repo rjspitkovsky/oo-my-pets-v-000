@@ -8,7 +8,7 @@ class Owner
   def initialize(species, pets = {fishes: [], cats: [], dogs: []})
     @species = species
     @pets = pets
-    @@owners << self 
+    @@owners << self
 
   end
 
@@ -38,5 +38,5 @@ class Owner
     @species
   end
 
-binding.pry
+
 end
