@@ -13,5 +13,5 @@ attr_accessor :name
     def self.all
       @@owners
     end
-binding.pry 
+binding.pry
 end
