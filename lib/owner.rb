@@ -3,10 +3,9 @@ require 'pry'
 class Owner
 
   attr_accessor  :pets, :owner
-  attr_reader  :species 
+  attr_reader  :species
 
   def initialize
-    @@all << Owner.new(owner)
     @species = "human"
 
   end
