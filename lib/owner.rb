@@ -25,6 +25,10 @@ class Owner
     @@all.clear
   end
 
+  def pets 
+    @pets = {fishes: [], cats: [], dogs: []}
+  end 
+
 
 binding.pry
 end
