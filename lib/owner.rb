@@ -1,5 +1,5 @@
 class Owner
-attr_accessor :owner 
+attr_accessor :owner
 
   @@owners = []
 
@@ -7,6 +7,10 @@ attr_accessor :owner
       @owner = owner
     end
 
+    def self.all
+      @@owners
+    end
+    
   def self.owners_count
     @@owners.count
   end
