@@ -3,14 +3,13 @@ require 'pry'
 class Owner
 
   attr_accessor  :pets
-  attr_reader   :name 
+  attr_reader   :name
 
   @@all = []
 
-  def initialize
+  def self.add_owner
     @@all << self
-    @name = "human"
-  end
+  end 
 
 
   def self.all
