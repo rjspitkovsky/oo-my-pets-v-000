@@ -5,10 +5,11 @@ attr_accessor :owner
 
     def initalize(owner)
       @owner = owner
+      @@owners << self 
     end
 
     def self.all
       @@owners
     end
-    
+
 end
