@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
 
-  attr_accessor  :pets, :owner
+  attr_accessor  :pets, :name
   attr_reader  :species
 
   def initialize
@@ -10,19 +10,22 @@ class Owner
 
   end
 
-  @@all = []
+  @@owners = []
 
   def self.new(owner)
     @@all << owner
   end
 
   def self.all
-    @@all
+    @@owners
   end
 
+    def self.count
+      @@owners.size
+    end 
+
   def self.reset_all
-    @@all.count
-    @@all.clear
+    @@owners.clear
   end
 
   def pets
