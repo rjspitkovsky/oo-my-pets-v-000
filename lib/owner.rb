@@ -8,8 +8,8 @@ class Owner
   @@all = []
 
   def self.add_owner
-    @@all << self
-  end 
+    @@all << @name 
+  end
 
 
   def self.all
