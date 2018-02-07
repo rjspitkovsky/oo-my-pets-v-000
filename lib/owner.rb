@@ -10,6 +10,6 @@ class Owner
     @@all
   end
 
-  
 
+binding.pry 
 end
