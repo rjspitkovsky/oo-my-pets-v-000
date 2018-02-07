@@ -5,8 +5,8 @@ class Owner
   attr_accessor  :pets, :owner
 
   def initialize
-    @owner = owner
-    @@all << @owner   
+    @owner = "human"
+    Owner.new(@owner)       
   end
 
   @@all = []
