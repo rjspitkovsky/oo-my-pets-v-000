@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
 
-  attr_accessor :owner, :pets 
+  attr_accessor :owner, :pets
 
 @@owners = []
 
@@ -14,5 +14,12 @@ class Owner
   def self.all
     @@owners
   end
+
+  def self.reset_all
+    @@owners.count
+    @@owners.clear
+  end 
+
+
   binding.pry
 end
