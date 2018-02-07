@@ -4,15 +4,16 @@ class Owner
 
   attr_accessor :owner, :pets
 
-@@owners = []
+@@all = []
 
   def initialize
     @owner = owner
+    @@all << self 
   end
 
 
   def self.all
-    @@owners
+    @@all
   end
 
 
