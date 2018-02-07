@@ -21,11 +21,11 @@ class Owner
   end
 
   def self.reset_all
-    @@all.count 
+    @@all.count
     @@all.clear
   end
 
-  def pets 
+  def pets
     @pets = {fishes: [], cats: [], dogs: []}
   end 
 
