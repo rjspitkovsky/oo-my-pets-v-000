@@ -10,18 +10,12 @@ class Owner
     @owner = owner
   end
 
-  def save
-    @@owners << self
-  end 
 
   def self.all
     @@owners
   end
 
-  def self.reset_all
-    @@owners.count
-    @@owners.clear
-  end
+
 
 
   binding.pry
