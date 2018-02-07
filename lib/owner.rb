@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
 
-  attr_accessor  :pets, :name 
+  attr_accessor  :pets, :name
   attr_reader  :species
 
   def initialize(species, pets = {fishes: [], cats: [], dogs: []})
@@ -78,5 +78,5 @@ class Owner
       "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size} dog(s), and #{@pets[:cats].size} cat(s)."
     end
 
-binding.pry
+
 end
