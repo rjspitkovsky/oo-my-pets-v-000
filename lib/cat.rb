@@ -1,3 +1,5 @@
+require 'pry'
+
 class Cat
 
 attr_accessor :name, :mood
@@ -14,5 +16,5 @@ attr_accessor :name, :mood
   def name
     @name
   end
-
+binding.pry
 end
