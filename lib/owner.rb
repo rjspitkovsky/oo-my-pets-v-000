@@ -27,8 +27,7 @@ class Owner
 
   def pets
     @pets = {fishes: [], cats: [], dogs: []}
-  end 
+  end
 
 
-binding.pry
 end
