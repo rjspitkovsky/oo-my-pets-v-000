@@ -3,6 +3,7 @@ require 'pry'
 class Owner
 
   attr_accessor  :pets, :owner
+  attr_writer  :species 
 
   def initialize
     @@all << Owner.new(owner)
@@ -26,6 +27,10 @@ class Owner
 
   def pets
     @pets = {fishes: [], cats: [], dogs: []}
+  end
+
+  def species
+    @species = "human"
   end
 
 binding.pry
