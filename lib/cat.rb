@@ -12,8 +12,7 @@ attr_accessor :name, :mood
   end
 
   def name
-    @name.freeze  
-    raise NoMethodError if @name != @name
+    @name
   end
 
 end
