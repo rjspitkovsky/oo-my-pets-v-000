@@ -1,14 +1,11 @@
 class Cat
 
-attr_accessor :mood, :name 
+attr_accessor :mood, :name
 
   def initialize(name)
     @name = name
     @mood = nervous
 end
 
-  def name
-    @name.freeze
-  end
 
 end
