@@ -8,7 +8,7 @@ class Owner
   @@all = []
 
   def self.add_owner
-    @@all << self  
+    @@all << self
   end
 
 
@@ -16,6 +16,9 @@ class Owner
     @@all
   end
 
+  def self.reset_all
+
+  end 
 
 
 binding.pry
