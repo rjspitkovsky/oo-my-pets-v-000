@@ -6,7 +6,7 @@ class Owner
 
   def initialize
     @owner = "human"
-    @@all << @owner
+    @@all << self 
   end
 
   @@all = []
@@ -28,5 +28,5 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
   end
 
-binding.pry 
+binding.pry
 end
