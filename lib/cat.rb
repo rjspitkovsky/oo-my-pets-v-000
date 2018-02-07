@@ -1,6 +1,6 @@
 class Cat
 
-attr_reader :mood,
+attr_reader :mood
 
   def initialize(name)
     @name = name
@@ -9,6 +9,6 @@ end
 
   def name
     @name.freeze
-  end 
+  end
 
 end
