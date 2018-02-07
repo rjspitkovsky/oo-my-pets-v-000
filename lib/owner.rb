@@ -6,10 +6,6 @@ class Owner
 
   @@all = [self]
 
-  def initialize
-
-  end
-
 
   def self.all
     @@all
