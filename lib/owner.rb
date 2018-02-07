@@ -6,6 +6,10 @@ class Owner
 
   @@all = []
 
+  def initialize
+    @@all << self
+  end 
+
 
   def self.all
     @@all
@@ -13,6 +17,6 @@ class Owner
 
 
 
-binding.pry 
+binding.pry
 
 end
