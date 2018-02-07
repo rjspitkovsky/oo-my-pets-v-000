@@ -5,7 +5,7 @@ attr_accessor :name
 
   @@owners = []
 
-    def initalize(name)
+    def initalize
       @name = name
       @@owners << self
     end
