@@ -2,12 +2,11 @@ require 'pry'
 
 class Owner
 
-  attr_accessor :owner, :pets
+  attr_accessor  :pets
 
 @@all = []
 
   def initialize
-    @owner = owner
     @@all << self
   end
 
