@@ -10,12 +10,12 @@ attr_accessor :owner
     def self.all
       @@owners
     end
-    
-  def self.owners_count
-    @@owners.count
-  end
 
-  def self.owners_reset
+    def self.owners_count
+    @@owners.count
+    end
+
+    def self.owners_reset
     @@owners.clear
-  end
+    end
 end
