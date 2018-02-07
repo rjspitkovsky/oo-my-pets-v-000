@@ -7,20 +7,11 @@ class Owner
 
   @@all = []
 
-  def self.add_owner
-    @@all << self
-  end
+  def initialize
+
+  end 
 
 
-  def self.all
-    @@all
-  end
 
-  def self.reset_all
-    @@all.count 
-  end
-
-
-binding.pry
 
 end
