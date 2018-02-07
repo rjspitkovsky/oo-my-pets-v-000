@@ -8,8 +8,11 @@ class Owner
 
   def initialize
     @owner = owner
-    @@owners << self
   end
+
+  def save
+    @@owners << self
+  end 
 
   def self.all
     @@owners
@@ -18,7 +21,7 @@ class Owner
   def self.reset_all
     @@owners.count
     @@owners.clear
-  end 
+  end
 
 
   binding.pry
