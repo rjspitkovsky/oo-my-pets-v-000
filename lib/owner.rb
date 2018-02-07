@@ -5,7 +5,7 @@ class Owner
   attr_accessor  :pets, :owner
 
   def initialize
-    @@all << @owner 
+    @@all << self  
   end
 
   @@all = []
