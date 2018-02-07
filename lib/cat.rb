@@ -4,11 +4,12 @@ attr_accessor :name, :mood
 
   def initialize(name)
     @name = name
+    @mood = "nervous"
   end
 
   def mood
-    @mood = "nervous"
-  end 
+    @mood
+  end
 
 
 end
