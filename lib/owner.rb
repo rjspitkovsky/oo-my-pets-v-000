@@ -10,5 +10,6 @@ class Owner
 
   def self.all
     @@owners
-  end 
+  end
+  binding.pry 
 end
