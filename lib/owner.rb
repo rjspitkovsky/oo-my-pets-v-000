@@ -9,14 +9,9 @@ class Owner
     @species = species
     @pets = pets
     @@owners << self
-
   end
 
   @@owners = []
-
-  def self.new(owner)
-    @@all << owner
-  end
 
   def self.all
     @@owners
@@ -30,13 +25,52 @@ class Owner
     @@owners.clear
   end
 
-  def pets
-    @pets = {fishes: [], cats: [], dogs: []}
+  def say_species
+    "I am a #{@species}."
   end
 
-  def species
-    @species
+  def buy_fish(fish_name)
+    @pets[:fishes] << Fish.new(fish_name)
   end
+
+  def buy_cat(cat_name)
+    @pets[:cats] << Cat.new(cat_name)
+  end
+
+  def buy_dog(dog_name)
+    @pets[:dogs] << Dog.new(dog_name)
+  end
+
+  def walk_dogs
+    @pets[:dogs].each do |dog|
+      dog.mood = "happy"
+    end
+  end
+
+    def play_with_cats
+      @pets[:cats].each do |cat|
+        cat.mood = "happy"
+      end
+    end
+
+    def feed_fish
+      @pets[:fishes].each do |fish|
+        fish.mood = "happy"
+      end
+    end
+
+    def sell_pets
+      @pets.each do |species, pets|
+        pets.each do |pet|
+          pet.mood = "nervous"
+        end
+      end
+      @pets = {}
+    end
+
+    def list_pets
+      "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size} dogs, and #{@pets[:cats].size} cats."
+    end 
 
 
 end
