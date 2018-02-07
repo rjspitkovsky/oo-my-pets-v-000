@@ -8,7 +8,8 @@ class Owner
 
   def initialize
     @@all << self
-  end 
+    @name = "human" 
+  end
 
 
   def self.all
