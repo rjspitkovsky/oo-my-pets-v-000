@@ -12,8 +12,7 @@ attr_accessor :name, :mood
   end
 
   def name
-    raise NoMethodError if @name != name
+    raise NoMethodError 
   end
-end 
 
 end
