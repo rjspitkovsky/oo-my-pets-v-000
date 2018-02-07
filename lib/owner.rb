@@ -4,9 +4,10 @@ class Owner
 
   attr_accessor  :pets
 
+  @@all = [self]
 
   def initialize
-    @@all = [self]
+
   end
 
 
