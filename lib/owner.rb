@@ -28,5 +28,5 @@ class Owner
     @pets = {fishes: [], cats: [], dogs: []}
   end
 
-
+binding.pry 
 end
