@@ -11,6 +11,8 @@ class Owner
     @@owners << self
   end
 
+  #CLASS METHODS 
+
   @@owners = []
 
   def self.all
@@ -29,6 +31,8 @@ class Owner
     "I am a #{@species}."
   end
 
+  #HASH/ARRAY ADDITION
+
   def buy_fish(fish_name)
     @pets[:fishes] << Fish.new(fish_name)
   end
@@ -40,6 +44,8 @@ class Owner
   def buy_dog(dog_name)
     @pets[:dogs] << Dog.new(dog_name)
   end
+
+  #HASH/ARRAY MANIPULATION
 
   def walk_dogs
     @pets[:dogs].each do |dog|
