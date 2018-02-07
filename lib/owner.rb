@@ -2,7 +2,7 @@ require 'pry'
 
 class Owner
 
-  attr_accessor  :pets, :name
+  attr_accessor  :pets
   attr_reader  :species
 
   def initialize(species, pets = {fishes: [], cats: [], dogs: []})
@@ -11,7 +11,7 @@ class Owner
     @@owners << self
   end
 
-  #CLASS METHODS 
+  #CLASS METHODS
 
   @@owners = []
 
