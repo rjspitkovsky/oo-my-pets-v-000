@@ -7,14 +7,14 @@ class Owner
 
   @@all = []
 
-  def self.new(owner) 
-    @@all << owner 
-  end 
+  def self.new(owner)
+    @@all << owner
+  end
 
   def self.all
     @@all
   end
 
 
-binding.pry 
+binding.pry
 end
