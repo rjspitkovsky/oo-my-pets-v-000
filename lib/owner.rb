@@ -1,5 +1,7 @@
+require 'pry'
+
 class Owner
-attr_accessor :name 
+attr_accessor :name
 
   @@owners = []
 
@@ -11,5 +13,5 @@ attr_accessor :name
     def self.all
       @@owners
     end
-
+binding.pry 
 end
